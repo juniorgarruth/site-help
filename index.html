@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Help! Limpeza Especializada - Limpeza residencial, comercial e pós-obra com qualidade, agilidade e produtos profissionais.">
+  <meta name="theme-color" content="#6B52B6">
+  <title>Help! Limpeza Especializada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== 1. HEADER / MENU FIXO ===== -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Help! Limpeza Especializada - início">
+        <img src="img/logosf.png" alt="Logo Help! Limpeza Especializada">
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#servicos" class="nav-link">Nossos Serviços</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20limpeza."
+         class="btn btn-whatsapp-header" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> Orçamento
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== 2. CARROSSEL FULL-WIDTH (3 BANNERS) =====
+         COMO TROCAR A IMAGEM DE CADA BANNER:
+         edite apenas o caminho dentro de url('...') no style de cada banner.
+         Ex.: style="background-image: url('img/minha-foto.jpg');" -->
+    <section class="hero-carousel" id="heroCarousel" aria-label="Banners de destaque">
+      <div class="carousel-track">
+
+        <!-- BANNER 1 -->
+        <div class="carousel-slide">
+          <section id="inicio" class="fw-banner" style="background-image: url('img/banner-promocao.svg');">
+            <div class="fw-overlay"></div>
+            <div class="fw-content container">
+              <span class="banner-tag"><i class="fas fa-tag"></i> Promoção</span>
+              <h1>10% OFF na <span class="highlight">primeira limpeza</span></h1>
+              <p>Agende agora e ganhe desconto especial para novos clientes.</p>
+              <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Quero%20aproveitar%20o%20desconto%20de%20primeira%20limpeza."
+                 class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i> Aproveitar
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <!-- BANNER 2 -->
+        <div class="carousel-slide">
+          <section class="fw-banner" style="background-image: url('img/banner-plano.svg');">
+            <div class="fw-overlay"></div>
+            <div class="fw-content container">
+              <span class="banner-tag"><i class="fas fa-calendar-check"></i> Planos Mensais</span>
+              <h1>Limpeza todo mês <span class="highlight">sem preocupação</span></h1>
+              <p>Planos de manutenção periódica com preço fixo e agendamento flexível.</p>
+              <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20os%20planos%20mensais."
+                 class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i> Conhecer planos
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <!-- BANNER 3 -->
+        <div class="carousel-slide">
+          <section class="fw-banner" style="background-image: url('img/banner-urgente.svg');">
+            <div class="fw-overlay"></div>
+            <div class="fw-content container">
+              <span class="banner-tag"><i class="fas fa-bolt"></i> Atendimento Rápido</span>
+              <h1>Precisou? A Help! <span class="highlight">resolve na hora</span></h1>
+              <p>Limpeza de urgência e emergência para imprevistos e eventos.</p>
+              <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Preciso%20de%20uma%20limpeza%20de%20urg%C3%AAncia."
+                 class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i> Chamar agora
+              </a>
+            </div>
+          </section>
+        </div>
+
+      </div>
+
+      <button type="button" class="carousel-arrow carousel-prev" id="carouselPrev" aria-label="Banner anterior">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button type="button" class="carousel-arrow carousel-next" id="carouselNext" aria-label="Próximo banner">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="carousel-dots" id="carouselDots" aria-label="Navegação dos banners"></div>
+    </section>
+
+    <!-- ===== 3. SEÇÃO SOBRE ===== -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Quem somos</span>
+          <h2>Sobre a <span class="highlight">Help!</span></h2>
+          <span class="section-divider"></span>
+        </div>
+        <div class="sobre-grid">
+          <div class="sobre-text">
+            <p>
+              A <strong>Help! Limpeza Especializada</strong> nasceu com uma missão simples:
+              devolver brilho, conforto e tranquilidade aos lares e empresas através de um
+              serviço de limpeza feito com seriedade, pontualidade e excelência.
+            </p>
+            <p>
+              Contamos com uma equipe treinada, produtos biodegradáveis e equipamentos
+              modernos para atender residências, condomínios, escritórios, lojas e obras.
+              Cada ambiente recebe um atendimento personalizado, garantindo higiene,
+              desinfecção e aquele acabamento impecável.
+            </p>
+            <ul class="sobre-diferenciais">
+              <li><i class="fas fa-check-circle"></i> Equipe treinada e uniformizada</li>
+              <li><i class="fas fa-check-circle"></i> Produtos de qualidade e seguros</li>
+              <li><i class="fas fa-check-circle"></i> Pontualidade e compromisso com prazos</li>
+              <li><i class="fas fa-check-circle"></i> Atendimento personalizado</li>
+            </ul>
+          </div>
+          <div class="sobre-cards">
+            <div class="sobre-card">
+              <i class="fas fa-star"></i>
+              <strong>Qualidade</strong>
+              <span>Higiene de verdade, com critério e detalhes bem cuidados.</span>
+            </div>
+            <div class="sobre-card">
+              <i class="fas fa-leaf"></i>
+              <strong>Segurança</strong>
+              <span>Produtos que cuidam do ambiente, das pessoas e do planeta.</span>
+            </div>
+            <div class="sobre-card">
+              <i class="fas fa-handshake"></i>
+              <strong>Confiança</strong>
+              <span>Atendimento próximo, transparente e dentro do prazo.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+
+
+
+    <!-- ===== 4. SEÇÃO NOSSOS SERVIÇOS ===== -->
+    <section id="servicos" class="section section-dark">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">O que fazemos</span>
+          <h2>Nossos <span class="highlight">Serviços</span></h2>
+          <span class="section-divider"></span>
+        </div>
+        <!-- COMO ADICIONAR FOTOS: coloque as imagens na pasta img/ e
+             adicione uma linha <img> abaixo de cada serviço. A primeira
+             foto é a capa; as demais aparecem no popup como galeria. -->
+        <div class="services-grid">
+          <article class="service-card">
+            <figure class="service-image" data-gallery>
+              <img src="img/servico-residencial.svg" alt="Limpeza Residencial" loading="lazy">
+              <img src="img/residencial-2.svg" alt="Limpeza Residencial 2" loading="lazy" hidden>
+              <img src="img/residencial-3.svg" alt="Limpeza Residencial 3" loading="lazy" hidden>
+              <span class="service-count"><i class="fas fa-images"></i></span>
+              <figcaption class="service-zoom"><i class="fas fa-search-plus"></i> Ver galeria</figcaption>
+            </figure>
+            <div class="service-body">
+              <span class="service-icon"><i class="fas fa-house-chimney"></i></span>
+              <h3>Limpeza Residencial</h3>
+              <p>
+                Limpeza completa para casas e apartamentos: rotina, pesada e de
+                manutenção, deixando cada cômodo organizado, higienizado e perfumado.
+              </p>
+              <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Limpeza%20Residencial."
+                 class="btn btn-sm btn-primary" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i> Solicitar
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <figure class="service-image" data-gallery>
+              <img src="img/servico-comercial.svg" alt="Limpeza Comercial" loading="lazy">
+              <img src="img/comercial-2.svg" alt="Limpeza Comercial 2" loading="lazy" hidden>
+              <img src="img/comercial-3.svg" alt="Limpeza Comercial 3" loading="lazy" hidden>
+              <span class="service-count"><i class="fas fa-images"></i></span>
+              <figcaption class="service-zoom"><i class="fas fa-search-plus"></i> Ver galeria</figcaption>
+            </figure>
+            <div class="service-body">
+              <span class="service-icon"><i class="fas fa-building"></i></span>
+              <h3>Limpeza Comercial</h3>
+              <p>
+                Higienização de escritórios, lojas, clínicas e condomínios com
+                planejamento que respeita o seu expediente e a imagem do seu negócio.
+              </p>
+              <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Limpeza%20Comercial."
+                 class="btn btn-sm btn-primary" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i> Solicitar
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <figure class="service-image" data-gallery>
+              <img src="img/servico-pos-obra.svg" alt="Limpeza Pós-Obra" loading="lazy">
+              <img src="img/pos-obra-2.svg" alt="Limpeza Pós-Obra 2" loading="lazy" hidden>
+              <img src="img/pos-obra-3.svg" alt="Limpeza Pós-Obra 3" loading="lazy" hidden>
+              <span class="service-count"><i class="fas fa-images"></i></span>
+              <figcaption class="service-zoom"><i class="fas fa-search-plus"></i> Ver galeria</figcaption>
+            </figure>
+            <div class="service-body">
+              <span class="service-icon"><i class="fas fa-helmet-safety"></i></span>
+              <h3>Limpeza Pós-Obra</h3>
+              <p>
+                Remoção de poeira fina, restos de argamassa e cola, com a desinfecção
+                completa para entregar a obra pronta para uso.
+              </p>
+              <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Limpeza%20P%C3%B3s-Obra."
+                 class="btn btn-sm btn-primary" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i> Solicitar
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. SEÇÃO CONTATO ===== -->
+    <section id="contato" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Fale conosco</span>
+          <h2>Vamos <span class="highlight">conversar</span>?</h2>
+          <span class="section-divider"></span>
+        </div>
+        <div class="contato-grid">
+          <div class="contato-info">
+            <h3>Solicite um orçamento sem compromisso</h3>
+            <p>
+              Responda rápido e apresente a melhor solução de limpeza
+              para o seu espaço. Estamos prontos para ajudar!
+            </p>
+            <ul class="contato-details">
+              <li><i class="fas fa-phone"></i> <a href="tel:+5500000000000">(00) 00000-0000</a></li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:contato@helplimpeza.com.br">contato@helplimpeza.com.br</a></li>
+              <li><i class="fas fa-map-marker-alt"></i> Sua cidade - Brasil</li>
+            </ul>
+            <div class="social-links">
+              <span class="social-label">Siga a gente:</span>
+              <a href="https://www.instagram.com/helplimpeza" target="_blank" rel="noopener" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/helplimpeza" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento."
+                 target="_blank" rel="noopener" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte para a gente o que precisa..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fas fa-paper-plane"></i> Enviar Mensagem
+            </button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 6. RODAPÉ ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Help! Limpeza Especializada. Todos os direitos reservados.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/helplimpeza" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/helplimpeza" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== 7a. BOTÃO FLUTUANTE WHATSAPP ===== -->
+  <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20limpeza."
+     class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Fale com a gente!</span>
+  </a>
+
+  <!-- ===== 7b. MODAL DE GALERIA (POPUP DE FOTOS) ===== -->
+  <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Galeria de fotos" hidden>
+    <button type="button" class="modal-close" id="modalClose" aria-label="Fechar">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="modal-content" id="modalContent">
+      <div class="modal-slider">
+        <button type="button" class="modal-nav modal-prev" id="modalPrev" aria-label="Foto anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <img id="modalImage" src="" alt="Foto do serviço">
+        <button type="button" class="modal-nav modal-next" id="modalNext" aria-label="Próxima foto">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="modal-head">
+        <span id="modalCounter">1 / 1</span>
+        <span id="modalCaption"></span>
+      </div>
+      <div class="modal-thumbs" id="modalThumbs" aria-label="Miniaturas das fotos"></div>
+    </div>
+  </div>
+
+  <!-- ===== 7c. BANNER DE POLÍTICA DE PRIVACIDADE (COOKIES / LGPD) ===== -->
+  <div id="lgpdBanner" class="lgpd-banner" role="dialog" aria-label="Aviso de privacidade e cookies">
+    <div class="lgpd-content">
+      <div class="lgpd-text">
+        <p>
+          <i class="fas fa-cookie-bite"></i>
+          Usamos cookies para melhorar sua experiência e analisar o tráfego do site.
+          Ao continuar, você concorda com a nossa
+          <a href="#lgpd" id="lgpdLink">Política de Privacidade</a>.
+        </p>
+      </div>
+      <div class="lgpd-actions">
+        <button type="button" id="lgpdAccept" class="btn btn-accept">Aceito</button>
+        <button type="button" id="lgpdDecline" class="btn btn-decline">Não Aceito</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

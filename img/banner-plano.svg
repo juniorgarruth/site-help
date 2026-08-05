@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-label="Banner planos mensais">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C89D34"/>
+      <stop offset="1" stop-color="#6B52B6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <circle cx="240" cy="120" r="150" fill="#ffffff" opacity="0.1"/>
+  <circle cx="1020" cy="400" r="170" fill="#ffffff" opacity="0.1"/>
+  <g transform="translate(700 160) rotate(10)">
+    <rect x="-12" y="0" width="24" height="200" rx="12" fill="#ffffff" opacity="0.95"/>
+    <rect x="-40" y="130" width="80" height="24" rx="12" fill="#ffffff" opacity="0.55"/>
+  </g>
+  <g transform="translate(890 120) rotate(-14)">
+    <circle cx="0" cy="50" r="30" fill="#ffffff" opacity="0.9"/>
+    <rect x="-12" y="72" width="24" height="130" rx="12" fill="#ffffff" opacity="0.9"/>
+    <rect x="-32" y="185" width="64" height="22" rx="11" fill="#ffffff" opacity="0.55"/>
+  </g>
+  <g fill="#ffffff" opacity="0.95">
+    <circle cx="760" cy="300" r="48"/>
+    <rect x="726" y="300" width="68" height="100" rx="8"/>
+    <rect x="726" y="400" width="68" height="20" rx="4" fill="#533C96"/>
+  </g>
+  <g fill="#533C96">
+    <rect x="120" y="300" width="52" height="34" rx="6"/>
+    <rect x="180" y="300" width="52" height="34" rx="6"/>
+    <rect x="240" y="300" width="52" height="34" rx="6"/>
+    <rect x="300" y="300" width="52" height="34" rx="6"/>
+    <rect x="360" y="300" width="52" height="34" rx="6"/>
+    <rect x="420" y="300" width="52" height="34" rx="6"/>
+  </g>
+</svg>
